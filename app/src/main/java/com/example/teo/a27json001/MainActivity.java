@@ -30,18 +30,18 @@ public class MainActivity extends AppCompatActivity {
 
     private class GetContacts extends AsyncTask<Void, Void, Void>{
 
-        public void execute() {
-        }
-
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            Toast.makeText(MainActivity.this, "Json Data is downloading", Toast.LENGTH_LONG).show();
+            Toast.makeText(MainActivity.this,
+                    "Json Data is downloading",
+                    Toast.LENGTH_LONG).show();
         }
 
         @Override
         protected Void doInBackground(Void... params) {
             return null;
+
         }
     }
 }
